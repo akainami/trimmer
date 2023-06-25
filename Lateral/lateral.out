@@ -1,0 +1,303 @@
+ THIS SOFTWARE AND ANY ACCOMPANYING DOCUMENTATION
+ IS RELEASED "AS IS".  THE U.S. GOVERNMENT MAKES NO
+ WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, CONCERNING
+ THIS SOFTWARE AND ANY ACCOMPANYING DOCUMENTATION,
+ INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OF
+ MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+ IN NO EVENT WILL THE U.S. GOVERNMENT BE LIABLE FOR ANY
+ DAMAGES, INCLUDING LOST PROFITS, LOST SAVINGS OR OTHER
+ INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE 
+ USE, OR INABILITY TO USE, THIS SOFTWARE OR ANY
+ ACCOMPANYING DOCUMENTATION, EVEN IF INFORMED IN ADVANCE
+ OF THE POSSIBILITY OF SUCH DAMAGES.
+  ****************************************************
+  *    USAF STABILITY AND CONTROL  DIGITAL DATCOM    *
+  *    PROGRAM REV. JAN 96   DIRECT INQUIRIES TO:    *
+  *    WRIGHT LABORATORY  (WL/FIGC)  ATTN: W. BLAKE  *
+  *      WRIGHT PATTERSON AFB, OHIO  45433           *
+  *    PHONE (513) 255-6764,   FAX (513) 258-4054    *
+  ****************************************************
+ Preparing to start the big loop
+ At 1000
+1                         CONERR - INPUT ERROR CHECKING
+0 ERROR CODES - N* DENOTES THE NUMBER OF OCCURENCES OF EACH ERROR
+0 A - UNKNOWN VARIABLE NAME
+0 B - MISSING EQUAL SIGN FOLLOWING VARIABLE NAME
+0 C - NON-ARRAY VARIABLE HAS AN ARRAY ELEMENT DESIGNATION - (N)
+0 D - NON-ARRAY VARIABLE HAS MULTIPLE VALUES ASSIGNED
+0 E - ASSIGNED VALUES EXCEED ARRAY DIMENSION
+0 F - SYNTAX ERROR
+
+0******************************  INPUT DATA CARDS  ******************************
+
+ CASEID Citation II Model 550                                                    
+ DERIV RAD                                                                       
+ DAMP                                                                            
+  $FLTCON WT=7000.0, NMACH=1.0,MACH(1)=0.4,                                      
+  NALT=1.0,ALT(1)=0.0,                                                           
+  NALPHA=12.0, ALSCHD(1)= -4.0, -2.0, 0.0,                                       
+  2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0$                              
+  $OPTINS SREF=320.8, CBARR=6.75, BLREF=51.7, ROUGFC=0.25E-3$                    
+  $SYNTHS XCG=20.79, ZCG=3.125,ALIW=2.5, ALIH=0.0,                               
+  XW=19.1, ZW=3.125, XH=39.2, ZH=7.75,                                           
+  XV=36.0, ZV=6.0, XVF=23.0, ZVF=6.7$                                            
+  $BODY NX=8.0, ITYPE=1.0, METHOD=1.0,                                           
+  X(1)=0.0,1.0,2.7,6.0,8.8,28.5,39.4,44.8,                                       
+  R(1)=0.0,1.25,2.1,2.7,2.76,2.7,1.25,0.0,                                       
+  ZU(1)=3.5,4.3,4.8,5.5,7.4,7.4,6.5,5.7,                                         
+  ZL(1)=3.5,2.5,2.25,2.1,2.0,2.2,4.3,5.7$                                        
+ NACA-W-5-23014                                                                  
+  $WGPLNF CHRDR=9.4, CHRDTP=3.01, TYPE=1.0,                                      
+  SSPN=25.85, SSPNE=23.46, SAVSI=1.3, CHSTAT=0.25,                               
+  TWISTA=-3.0, DHDADI=3.6$                                                       
+ NACA-H-4-0010                                                                   
+  $HTPLNF CHRDR=4.99, CHRDTP=2.48,                                               
+  SSPN=9.42, SSPNE=9.21, SAVSI=5.32,                                             
+  CHSTAT=0.25, TWISTA=0.0, DHDADI=9.2, TYPE=1.0$                                 
+ NACA-V-4-0008                                                                   
+  $VTPLNF CHRDTP=3.63, SSPNE=8.85,                                               
+  SSPN=9.42, CHRDR=8.3, SAVSI=32.3, CHSTAT=0.25, TYPE=1.0$                       
+ NACA-F-4-0004                                                                   
+  $VFPLNF CHRDR=19.3, CHRDTP=0.0, CHSTAT=0.0,                                    
+  DHDADO=0.0, SAVSI=80.0, SSPN=3.3, SSPNE=3.1, TYPE=1.0$                         
+  $ASYFLP STYPE=4.0, NDELTA=9.0,                                                 
+  DELTAL(1)=-32.0,-20.0,-10.0,-5.0,0.0,5.0,10.0,20.0,32.0,                       
+  DELTAR(1)=32.0,20.0,10.0,5.0,0.0,-5.0,-10.0,-20.0,-32.0,                       
+  SPANFI=15.2, SPANFO=24.0,                                                      
+  PHETE=0.05228,                                                                 
+  CHRDFI=1.87, CHRDFO=1.2$                                                       
+ NEXT CASE                                                                       
+1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
+0
+ CASEID Citation II Model 550                                                    
+ DERIV RAD                                                                       
+ DAMP                                                                            
+  $FLTCON WT=7000.0, NMACH=1.0,MACH(1)=0.4,                                      
+  NALT=1.0,ALT(1)=0.0,                                                           
+  NALPHA=12.0, ALSCHD(1)= -4.0, -2.0, 0.0,                                       
+  2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0$                              
+  $OPTINS SREF=320.8, CBARR=6.75, BLREF=51.7, ROUGFC=0.25E-3$                    
+  $SYNTHS XCG=20.79, ZCG=3.125,ALIW=2.5, ALIH=0.0,                               
+  XW=19.1, ZW=3.125, XH=39.2, ZH=7.75,                                           
+  XV=36.0, ZV=6.0, XVF=23.0, ZVF=6.7$                                            
+  $BODY NX=8.0, ITYPE=1.0, METHOD=1.0,                                           
+  X(1)=0.0,1.0,2.7,6.0,8.8,28.5,39.4,44.8,                                       
+  R(1)=0.0,1.25,2.1,2.7,2.76,2.7,1.25,0.0,                                       
+  ZU(1)=3.5,4.3,4.8,5.5,7.4,7.4,6.5,5.7,                                         
+  ZL(1)=3.5,2.5,2.25,2.1,2.0,2.2,4.3,5.7$                                        
+ NACA-W-5-23014                                                                  
+  $WGPLNF CHRDR=9.4, CHRDTP=3.01, TYPE=1.0,                                      
+  SSPN=25.85, SSPNE=23.46, SAVSI=1.3, CHSTAT=0.25,                               
+  TWISTA=-3.0, DHDADI=3.6$                                                       
+ NACA-H-4-0010                                                                   
+  $HTPLNF CHRDR=4.99, CHRDTP=2.48,                                               
+  SSPN=9.42, SSPNE=9.21, SAVSI=5.32,                                             
+  CHSTAT=0.25, TWISTA=0.0, DHDADI=9.2, TYPE=1.0$                                 
+ NACA-V-4-0008                                                                   
+  $VTPLNF CHRDTP=3.63, SSPNE=8.85,                                               
+  SSPN=9.42, CHRDR=8.3, SAVSI=32.3, CHSTAT=0.25, TYPE=1.0$                       
+ NACA-F-4-0004                                                                   
+  $VFPLNF CHRDR=19.3, CHRDTP=0.0, CHSTAT=0.0,                                    
+  DHDADO=0.0, SAVSI=80.0, SSPN=3.3, SSPNE=3.1, TYPE=1.0$                         
+  $ASYFLP STYPE=4.0, NDELTA=9.0,                                                 
+  DELTAL(1)=-32.0,-20.0,-10.0,-5.0,0.0,5.0,10.0,20.0,32.0,                       
+  DELTAR(1)=32.0,20.0,10.0,5.0,0.0,-5.0,-10.0,-20.0,-32.0,                       
+  SPANFI=15.2, SPANFO=24.0,                                                      
+  PHETE=0.05228,                                                                 
+  CHRDFI=1.87, CHRDFO=1.2$                                                       
+ NEXT CASE                                                                       
+0 INPUT DIMENSIONS ARE IN FT, SCALE FACTOR IS 1.0000
+
+ Return to main program from M01O01
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
+                                                        WING SECTION DEFINITION
+0                                 IDEAL ANGLE OF ATTACK =   1.78973 DEG.
+
+                              ZERO LIFT ANGLE OF ATTACK =  -1.07986 DEG.
+
+                                 IDEAL LIFT COEFFICIENT =   0.32672
+
+                  ZERO LIFT PITCHING MOMENT COEFFICIENT =  -0.01182
+
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.09490 /DEG.
+
+                                    LEADING EDGE RADIUS =   0.02160 FRACTION CHORD
+
+                              MAXIMUM AIRFOIL THICKNESS =   0.14000 FRACTION CHORD
+
+                                                DELTA-Y =   3.69714 PERCENT CHORD
+
+
+0                         MACH= 0.4000 LIFT-CURVE-SLOPE =   0.10164 /DEG.      XAC =   0.25991
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
+                                                   HORIZONTAL TAIL SECTION DEFINITION
+0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
+
+                              ZERO LIFT ANGLE OF ATTACK =   0.00000 DEG.
+
+                                 IDEAL LIFT COEFFICIENT =   0.00000
+
+                  ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
+
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.09755 /DEG.
+
+                                    LEADING EDGE RADIUS =   0.01102 FRACTION CHORD
+
+                              MAXIMUM AIRFOIL THICKNESS =   0.10000 FRACTION CHORD
+
+                                                DELTA-Y =   2.64081 PERCENT CHORD
+
+
+0                         MACH= 0.4000 LIFT-CURVE-SLOPE =   0.10528 /DEG.      XAC =   0.25838
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
+                                                    VERTICAL TAIL SECTION DEFINITION
+0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
+
+                              ZERO LIFT ANGLE OF ATTACK =   0.00000 DEG.
+
+                                 IDEAL LIFT COEFFICIENT =   0.00000
+
+                  ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
+
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.09902 /DEG.
+
+                                    LEADING EDGE RADIUS =   0.00705 FRACTION CHORD
+
+                              MAXIMUM AIRFOIL THICKNESS =   0.08000 FRACTION CHORD
+
+                                                DELTA-Y =   2.11265 PERCENT CHORD
+
+
+0                         MACH= 0.4000 LIFT-CURVE-SLOPE =   0.10708 /DEG.      XAC =   0.25688
+1                             AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM   
+                                                     VENTRAL FIN SECTION DEFINITION
+0                                 IDEAL ANGLE OF ATTACK =   0.00000 DEG.
+
+                              ZERO LIFT ANGLE OF ATTACK =   0.00000 DEG.
+
+                                 IDEAL LIFT COEFFICIENT =   0.00000
+
+                  ZERO LIFT PITCHING MOMENT COEFFICIENT =   0.00000
+
+                             MACH ZERO LIFT-CURVE-SLOPE =   0.10125 /DEG.
+
+                                    LEADING EDGE RADIUS =   0.00176 FRACTION CHORD
+
+                              MAXIMUM AIRFOIL THICKNESS =   0.04000 FRACTION CHORD
+
+                                                DELTA-Y =   1.05633 PERCENT CHORD
+
+
+0                         MACH= 0.4000 LIFT-CURVE-SLOPE =   0.10994 /DEG.      XAC =   0.25458
+ Return to main program from M50O62
+ Return to main program from M02O02
+ Return to main program from M51O63
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS AT ANGLE OF ATTACK AND IN SIDESLIP
+                                  WING-BODY-HORIZONTAL TAIL-VERTICAL TAIL-VENTRAL FIN CONFIGURATION
+                                                       Citation II Model 550
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             FT       FT/SEC     LB/FT**2       DEG R         1/FT               FT**2        FT        FT        FT        FT
+0 0.400       0.00     446.53   2.1162E+03     518.670     2.8273E+06           320.800      6.750    51.700    20.790     3.125
+0                                                               -------------------DERIVATIVE (PER RADIAN)-------------------
+0 ALPHA     CD       CL       CM       CN       CA       XCP        CLA          CMA          CYB          CNB          CLB
+0
+   -4.0    0.018   -0.223    0.1811  -0.224    0.002   -0.810    5.445E+00   -1.889E+00   -7.499E-01    6.813E-02   -1.422E-01
+   -2.0    0.015   -0.031    0.1137  -0.032    0.014   -3.577    5.499E+00   -1.896E+00                             -1.362E-01
+    0.0    0.017    0.161    0.0487   0.161    0.017    0.303    5.543E+00   -1.850E+00                             -1.301E-01
+    2.0    0.021    0.356   -0.0155   0.356    0.009   -0.043    5.621E+00   -1.829E+00                             -1.240E-01
+    4.0    0.029    0.553   -0.0789   0.554   -0.009   -0.142    5.725E+00   -1.812E+00                             -1.177E-01
+    6.0    0.042    0.755   -0.1420   0.756   -0.037   -0.188    5.687E+00   -1.824E+00                             -1.114E-01
+    8.0    0.058    0.950   -0.2063   0.949   -0.075   -0.217    5.165E+00   -1.829E+00                             -1.052E-01
+   10.0    0.076    1.116   -0.2696   1.112   -0.119   -0.242    4.349E+00   -1.879E+00                             -9.934E-02
+   12.0    0.095    1.254   -0.3375   1.246   -0.168   -0.271    3.534E+00   -2.008E+00                             -9.363E-02
+   14.0    0.115    1.363     NA      1.350   -0.218    NA       1.043E+00      NA                                  -8.816E-02
+   16.0    0.123    1.327     NA      1.309   -0.247    NA      -2.073E+00      NA                                  -8.438E-02
+   18.0    0.131    1.218     NA      1.199   -0.252    NA      -4.158E+00      NA                                  -8.100E-02
+0                                    ALPHA     Q/QINF    EPSLON  D(EPSLON)/D(ALPHA)
+0
+                                     -4.0      1.000     -0.719        0.439
+                                     -2.0      1.000      0.158        0.445
+                                      0.0      1.000      1.060        0.459
+                                      2.0      1.000      1.995        0.475
+                                      4.0      1.000      2.960        0.488
+                                      6.0      1.000      3.948        0.488
+                                      8.0      1.000      4.911        0.460
+                                     10.0      1.000      5.786        0.386
+                                     12.0      1.000      6.453        0.272
+                                     14.0      1.000      6.873        0.088
+                                     16.0      1.000      6.805       -0.081
+                                     18.0      1.000      6.549       -0.128
+0*** NA PRINTED WHEN METHOD NOT APPLICABLE
+1                               AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                                         DYNAMIC DERIVATIVES
+                                  WING-BODY-HORIZONTAL TAIL-VERTICAL TAIL-VENTRAL FIN CONFIGURATION
+                                                       Citation II Model 550
+ 
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             FT       FT/SEC     LB/FT**2       DEG R         1/FT               FT**2        FT        FT        FT        FT
+0 0.400       0.00     446.53   2.1162E+03     518.670     2.8273E+06           320.800      6.750    51.700    20.790     3.125
+                                                    DYNAMIC DERIVATIVES (PER RADIAN)
+0           -------PITCHING-------    -----ACCELERATION------    --------------ROLLING--------------    --------YAWING--------
+0   ALPHA       CLQ          CMQ           CLAD         CMAD         CLP          CYP          CNP          CNR          CLR
+0
+    -4.00    9.294E+00   -1.843E+01     2.406E+00   -7.160E+00   -4.587E-01   -7.992E-02    1.599E-02   -1.083E-01   -4.584E-04
+    -2.00                               2.440E+00   -7.263E+00   -4.615E-01   -8.829E-02    2.344E-04   -1.099E-01    3.111E-02
+     0.00                               2.518E+00   -7.496E+00   -4.676E-01   -9.652E-02   -1.543E-02   -1.111E-01    6.280E-02
+     2.00                               2.605E+00   -7.752E+00   -4.752E-01   -1.050E-01   -3.138E-02   -1.118E-01    9.507E-02
+     4.00                               2.678E+00   -7.969E+00   -4.792E-01   -1.136E-01   -4.760E-02   -1.121E-01    1.276E-01
+     6.00                               2.675E+00   -7.962E+00   -4.610E-01   -1.226E-01   -6.478E-02   -1.120E-01    1.602E-01
+     8.00                               2.521E+00   -7.503E+00   -3.917E-01   -1.310E-01   -8.343E-02   -1.115E-01    1.897E-01
+    10.00                               2.114E+00   -6.293E+00   -2.954E-01   -1.366E-01   -1.012E-01   -1.110E-01    2.114E-01
+    12.00                               1.489E+00   -4.433E+00   -1.992E-01   -1.392E-01   -1.170E-01   -1.104E-01    2.261E-01
+    14.00                               4.815E-01   -1.433E+00    8.248E-02   -1.477E-01   -1.370E-01   -1.100E-01    2.332E-01
+    16.00                              -4.440E-01    1.322E+00    3.928E-01    7.683E-01   -3.951E-01   -1.111E-01    2.051E-01
+    18.00                              -7.014E-01    2.088E+00    5.492E-01   -4.559E-02   -1.684E-01   -1.123E-01    1.654E-01
+0*** VEHICLE WEIGHT =   7000.00 LB.
+0*** LEVEL FLIGHT LIFT COEFFICIENT = 0.09206
+1                            AUTOMATED STABILITY AND CONTROL METHODS PER APRIL 1976 VERSION OF DATCOM
+                                         CHARACTERISTICS OF HIGH LIFT AND CONTROL DEVICES
+                                            WING PLAIN TRAILING-EDGE FLAP CONFIGURATION
+                                                       Citation II Model 550
+ -----------------------  FLIGHT CONDITIONS  ------------------------           --------------  REFERENCE DIMENSIONS  ------------
+  MACH    ALTITUDE   VELOCITY    PRESSURE    TEMPERATURE     REYNOLDS             REF.      REFERENCE LENGTH   MOMENT REF. CENTER
+ NUMBER                                                       NUMBER              AREA       LONG.     LAT.     HORIZ      VERT
+             FT       FT/SEC     LB/FT**2       DEG R         1/FT               FT**2        FT        FT        FT        FT
+0 0.400       0.00     446.53   2.1162E+03     518.670     2.8273E+06           320.800      6.750    51.700    20.790     3.125
+0                           ----------YAWING MOMENT COEFFICIENT,CN,DUE TO CONTROL DEFLECTION----------
+0(DELTAL-DELTAR)=-64.0       -40.0       -20.0       -10.0         0.0        10.0        20.0        40.0        64.0
+0ALPHA
+0
+  -4.0        -8.706E-04  -7.299E-04  -4.669E-04  -2.334E-04   0.000E+00   2.334E-04   4.669E-04   7.299E-04   8.706E-04
+  -2.0         1.869E-04   1.567E-04   1.002E-04   5.012E-05   0.000E+00  -5.012E-05  -1.002E-04  -1.567E-04  -1.869E-04
+   0.0         1.254E-03   1.051E-03   6.723E-04   3.361E-04   0.000E+00  -3.361E-04  -6.723E-04  -1.051E-03  -1.254E-03
+   2.0         2.343E-03   1.964E-03   1.257E-03   6.283E-04   0.000E+00  -6.283E-04  -1.257E-03  -1.964E-03  -2.343E-03
+   4.0         3.447E-03   2.889E-03   1.848E-03   9.241E-04   0.000E+00  -9.241E-04  -1.848E-03  -2.889E-03  -3.447E-03
+   6.0         4.554E-03   3.817E-03   2.442E-03   1.221E-03   0.000E+00  -1.221E-03  -2.442E-03  -3.817E-03  -4.554E-03
+   8.0         5.569E-03   4.668E-03   2.986E-03   1.493E-03   0.000E+00  -1.493E-03  -2.986E-03  -4.668E-03  -5.569E-03
+  10.0         6.349E-03   5.322E-03   3.404E-03   1.702E-03   0.000E+00  -1.702E-03  -3.404E-03  -5.322E-03  -6.349E-03
+  12.0         6.914E-03   5.796E-03   3.707E-03   1.854E-03   0.000E+00  -1.854E-03  -3.707E-03  -5.796E-03  -6.914E-03
+  14.0         7.244E-03   6.073E-03   3.885E-03   1.942E-03   0.000E+00  -1.942E-03  -3.885E-03  -6.073E-03  -7.244E-03
+  16.0         6.493E-03   5.443E-03   3.482E-03   1.741E-03   0.000E+00  -1.741E-03  -3.482E-03  -5.443E-03  -6.493E-03
+  18.0         5.383E-03   4.512E-03   2.886E-03   1.443E-03   0.000E+00  -1.443E-03  -2.886E-03  -4.512E-03  -5.383E-03
+0
+0                                            DELTAL          DELTAR          (CL)ROLL
+0
+                                             -32.0            32.0           -6.8725E-02
+                                             -20.0            20.0           -5.7608E-02
+                                             -10.0            10.0           -3.6863E-02
+                                              -5.0             5.0           -1.8431E-02
+                                               0.0             0.0            0.0000E+00
+                                               5.0            -5.0            1.8431E-02
+                                              10.0           -10.0            3.6863E-02
+                                              20.0           -20.0            5.7608E-02
+                                              32.0           -32.0            6.8725E-02
+ Return to main program from M57O71
+1          THE FOLLOWING IS A LIST OF ALL INPUT CARDS FOR THIS CASE.
+0
+1 END OF JOB.
